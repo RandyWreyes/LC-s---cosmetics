@@ -498,7 +498,21 @@ h6 {
   transition: all 0.2s ease; /* Smooth transition */
 }
 
+/* Add padding and styling for Facebook and Instagram icons */
+.navmenu .dropdown-menu li a i {
+  margin-right: 8px; /* Space between the icon and text */
+  padding: 10px; /* Add padding around the icon */
+  font-size: 18px; /* Adjust icon size */
+  color: var(--default-color); /* Match the site's default color */
+  background-color: rgba(255, 255, 255, 0.2); /* Optional background for the icon */
+  border-radius: 50%; /* Make the icon circular */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.navmenu .dropdown-menu li a:hover i {
+  background-color: var(--accent-color); /* Highlight background on hover */
+  color: var(--contrast-color); /* Change icon color on hover */
+}
 
 }
 
@@ -523,13 +537,22 @@ h6 {
 
 /* Dropdown menu styling */
 .navmenu .dropdown-menu li {
-  padding: 10px 20px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically align icons and text */
+  padding: 10px 20px; /* Add padding for spacing */
 }
 
 .navmenu .dropdown-menu li a {
-  color: var(--default-color);
-  text-decoration: none;
-  transition: color 0.3s;
+  display: flex; /* Ensure the link wraps both the icon and text */
+  align-items: center; /* Vertically align icon and text */
+  text-decoration: none; /* Remove underline */
+  color: var(--default-color); /* Use the site's default color */
+  transition: color 0.3s ease;
+}
+
+.navmenu .dropdown-menu li a i {
+  margin-right: 8px; /* Add spacing between the icon and text */
+  font-size: 18px; /* Adjust icon size */
 }
 
 .navmenu .dropdown-menu li a:hover {
