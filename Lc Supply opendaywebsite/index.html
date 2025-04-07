@@ -24,63 +24,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.scss" rel="stylesheet">
-
-  <style>
-    /* Navbar dropdown styling */
-    .navmenu .dropdown-menu li {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 10px 20px;
-    }
-
-    .navmenu .dropdown-menu li a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: var(--default-color);
-      transition: color 0.3s ease;
-    }
-
-    .navmenu .dropdown-menu li a i {
-      margin-right: 8px;
-      font-size: 18px;
-    }
-
-    .navmenu .dropdown-menu li a:hover {
-      color: var(--accent-color);
-    }
-
-    /* Product card hover and click effects */
-    .card:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .card:active {
-      transform: scale(0.98);
-      transition: transform 0.1s ease;
-    }
-
-    /* Modal image styling */
-    .modal-img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .card {
-        margin-bottom: 20px;
-      }
-
-      .modal-dialog {
-        max-width: 90%;
-      }
-    }
-  </style>
 </head>
 
 <body class="index-page">
@@ -150,6 +93,16 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Luxury Lipstick" data-description="A premium lipstick for a luxurious look." data-price="$25.00" data-img="assets/prod/2.jpg">
+            <img src="assets/prod/2.jpg" class="card-img-top" alt="Luxury Lipstick">
+            <div class="card-body">
+              <h5 class="card-title">Luxury Lipstick</h5>
+              <p class="card-text">$25.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Elegant Necklace" data-description="A beautiful and elegant necklace to enhance your style." data-price="$120.00" data-img="assets/prod/1.jpg">
             <img src="assets/prod/1.jpg" class="card-img-top" alt="Elegant Necklace">
             <div class="card-body">
@@ -183,12 +136,6 @@
             <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-          <img src="assets/prod/2.jpg" class="card-img-top" alt="" height="270px" width="100px">   <!-- Replace with your product image -->
       </div>
     </div>
 
@@ -243,182 +190,6 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">SVR</strong> <span>All Rights Reserved</span></p>
       </div>
     </div>
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    // JavaScript to populate modal with product details
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('click', function () {
-        const title = this.getAttribute('data-title');
-        const description = this.getAttribute('data-description');
-        const price = this.getAttribute('data-price');
-        const img = this.getAttribute('data-img');
-
-        document.getElementById('productModalLabel').textContent = title;
-        document.getElementById('productDescription').textContent = description;
-        document.getElementById('productPrice').textContent = price;
-        document.getElementById('productModalImg').src = img;
-
-        // Add event listener for the "Add to Cart" button
-        const addToCartButton = document.getElementById('addToCartButton');
-        addToCartButton.onclick = function () {
-          alert(`${title} has been added to your cart!`);
-        };
-      });
-    });
-  </script>
-=======
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-          <img src="assets/prod/2...jpg" class="card-img-top" alt="" height="270px" width="100px">   <!-- Replace with your product image -->
-          <div class="card-body">
-              <h5 class="card-title">Luxury Lipstick</h5>
-              <p class="card-text">$25.00</p>
-              <a href="#" class="btn btn-primary">View Details</a>
-          </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-          <img src="assets/prod/3.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-          <div class="card-body">
-              <h5 class="card-title">Silver Earrings</h5>
-              <p class="card-text">$70.00</p>
-              <a href="#" class="btn btn-primary">View Details</a>
-          </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-          <img src="assets/prod/4.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-          <div class="card-body">
-              <h5 class="card-title">Elegant Necklace</h5>
-              <p class="card-text">$120.00</p>
-              <a href="assets/prod/4.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
-          </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-          <img src="assets/prod/5.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-          <div class="card-body">
-              <h5 class="card-title">Elegant Necklace</h5>
-              <p class="card-text">$120.00</p>
-              <a href="assets/prod/5.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
-          </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-          <img src="assets/prod/6.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-          <div class="card-body">
-              <h5 class="card-title">Elegant Necklace</h5>
-              <p class="card-text">$120.00</p>
-              <a href="assets/prod/6.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
-          </div>
-      </div>
-    </div>
-    <div class="btn-box">
-      <a href="products.html">
-        View All Products
-      </a>
-    </div>
-  </div>
-</div> 
-
-    <!-- contact section -->
-
-  <section class="contact_section ">
-    <div class="container px-0">
-      <div class="heading_container ">
->>>>>>> c096acc6f0236ddefa21890d9c056d497fb58fa5
-        <h2 class="">
-          Contact Us
-        </h2>
-      </div>
-    </div>
-    <div class="container container-bg">
-      <div class="row">
-        <div class="col-lg-7 col-md-6 px-0">
-          <div class="map_container">
-            <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-5 px-0">
-          <form action="#">
-            <div>
-              <input type="text" placeholder="Name" />
-            </div>
-            <div>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" placeholder="Phone" />
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="Message" />
-            </div>
-            <div class="d-flex ">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">SVR</span>
-            </a>
-            <div class="social-links d-flex mt-4">
-              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="copyright">
-      <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">SVR</strong> <span>All Rights Reserved</span></p>
-      </div>
-    </div>
-
   </footer>
 
   <!-- Scroll Top -->
