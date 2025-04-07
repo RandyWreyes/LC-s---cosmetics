@@ -174,9 +174,151 @@
   height: 100%;
 }
 
+/* Navbar dropdown styling */
+.navmenu .dropdown-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
 
+.navmenu .dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--default-color);
+  transition: color 0.3s ease;
+}
 
+.navmenu .dropdown-menu li a i {
+  margin-right: 8px;
+  font-size: 18px;
+}
 
+.navmenu .dropdown-menu li a:hover {
+  color: var(--accent-color);
+}
+
+/* Product card hover and click effects */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+/* Modal image styling */
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .modal-dialog {
+    max-width: 90%;
+  }
+}
+
+/* General Styling */
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.8); /* Fallback for color-mix */
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/* Navbar Styling */
+.navmenu {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 5px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navmenu ul li {
+  margin: 0 10px;
+}
+
+.navmenu ul li a {
+  text-decoration: none;
+  color: rgb(255, 163, 240);
+  font-weight: bold;
+  padding: 10px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navmenu ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Dropdown Menu */
+.navmenu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.navmenu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navmenu .dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.navmenu .dropdown-menu li a {
+  color: var(--default-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navmenu .dropdown-menu li a:hover {
+  color: var(--accent-color);
+}
 
 /* Fonts */
 :root {
@@ -238,7 +380,7 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: rgba(255, 255, 255, 0.8); /* Fallback for color-mix */
   text-decoration: none;
 }
 
@@ -585,8 +727,8 @@ h6 {
 
 
 .footer .social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  background-color: color-mix(in srgb, var(--default-color) 5%, white 10%);
+  color: rgba(255, 255, 255, 0.8); /* Fallback for color-mix */
+  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,6 +748,7 @@ h6 {
 
 .footer .copyright {
   padding: 30px 0;
+  text-align: center;
 }
 
 .footer .copyright p {
@@ -738,7 +881,7 @@ section,
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: rgba(255, 255, 255, 0.8); /* Fallback for color-mix */
 }
 
 .hero .icon-box {

@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Favicons -->
-  <link href="assets/img/logo.jpg" rel="icon">
+  <link href="assets/logo/logo1.png" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,53 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.scss" rel="stylesheet">
+
+  <style>
+    /* Align Facebook and Instagram links */
+    .navmenu .dropdown-menu li {
+      display: flex; /* Use flexbox for alignment */
+      align-items: center; /* Vertically align icons and text */
+      padding: 10px 20px; /* Add padding for spacing */
+    }
+
+    .navmenu .dropdown-menu li a {
+      display: flex; /* Ensure the link wraps both the icon and text */
+      align-items: center; /* Vertically align icon and text */
+      text-decoration: none; /* Remove underline */
+      color: var(--default-color); /* Use the site's default color */
+      transition: color 0.3s ease;
+    }
+
+    .navmenu .dropdown-menu li a i {
+      margin-right: 8px; /* Add spacing between the icon and text */
+      font-size: 18px; /* Adjust icon size */
+    }
+
+    .navmenu .dropdown-menu li a:hover {
+      color: var(--accent-color); /* Highlight link on hover */
+    }
+
+    /* Dropdown menu styling */
+    .navmenu .dropdown-menu {
+      display: none; /* Hide the dropdown menu by default */
+      position: absolute;
+      top: 100%; /* Position the dropdown below the parent */
+      left: 0;
+      background-color: transparent; /* Make the background transparent */
+      padding: 10px 0;
+      margin: 0;
+      list-style: none;
+      border-radius: 8px; /* Optional: Rounded corners */
+      box-shadow: none; /* Remove any shadow */
+      z-index: 1000;
+    }
+
+    /* Show dropdown menu on hover (desktop) */
+    .navmenu .dropdown:hover .dropdown-menu {
+      display: block; /* Show the dropdown menu */
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -32,13 +79,13 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/logo/logo1.png" alt="">
         <h1 class="sitename">LC's Supply</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Other Pages</a>
@@ -56,7 +103,7 @@
             </ul>
           </li>
         </ul>
-        <i class="mobile-nav-toggle bi bi-list"></i>
+        <i class="mobile-nav-toggle bi bi-list"></i> <!-- Mobile toggle icon -->
       </nav>
     </div>
   </header>
@@ -93,18 +140,48 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Luxury Lipstick" data-description="A premium lipstick for a luxurious look." data-price="$25.00" data-img="assets/prod/2.jpg">
-            <img src="assets/prod/2.jpg" class="card-img-top" alt="Luxury Lipstick">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Elegant Necklace" data-description="A beautiful and elegant necklace to enhance your style." data-price="$120.00" data-img="assets/prod/1.jpg">
+            <img src="assets/prod/2...jpg" class="card-img-top" alt="Elegant Necklace">
             <div class="card-body">
-              <h5 class="card-title">Luxury Lipstick</h5>
-              <p class="card-text">$25.00</p>
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$120.00</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Elegant Necklace" data-description="A beautiful and elegant necklace to enhance your style." data-price="$120.00" data-img="assets/prod/1.jpg">
-            <img src="assets/prod/1.jpg" class="card-img-top" alt="Elegant Necklace">
+            <img src="assets/prod/3.jpg" class="card-img-top" alt="Elegant Necklace">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$120.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4" height="100px" width="270px">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Elegant Necklace" data-description="A beautiful and elegant necklace to enhance your style." data-price="$120.00" data-img="assets/prod/1.jpg">
+            <img src="assets/prod/4.jpg" class="card-img-top" alt="Elegant Necklace">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$120.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4" height="100px" width="270px">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Elegant Necklace" data-description="A beautiful and elegant necklace to enhance your style." data-price="$120.00" data-img="assets/prod/1.jpg">
+            <img src="assets/prod/5.jpg" class="card-img-top" alt="Elegant Necklace">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$120.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4" height="100px" width="270px">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Elegant Necklace" data-description="A beautiful and elegant necklace to enhance your style." data-price="$120.00" data-img="assets/prod/1.jpg">
+            <img src="assets/prod/6.jpg" class="card-img-top" alt="Elegant Necklace">
             <div class="card-body">
               <h5 class="card-title">Elegant Necklace</h5>
               <p class="card-text">$120.00</p>
