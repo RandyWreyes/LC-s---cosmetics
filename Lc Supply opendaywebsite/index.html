@@ -51,6 +51,37 @@
     .navmenu .dropdown-menu li a:hover {
       color: var(--accent-color); /* Highlight link on hover */
     }
+
+    /* Hover effect for product cards */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Click effect for product cards */
+    .card:active {
+      transform: scale(0.98);
+      transition: transform 0.1s ease;
+    }
+
+    /* Modal image styling */
+    .modal-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .card {
+        margin-bottom: 20px;
+      }
+
+      .modal-dialog {
+        max-width: 90%;
+      }
+    }
   </style>
 
 </head>
@@ -126,45 +157,44 @@
 <div class="container" id="products">
   <h2 class="text-center mb-4">Featured Products</h2>
   <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-              <img src="assets/prod/1.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-              <div class="card-body">
-                  <h5 class="card-title">Elegant Necklace</h5>
-                  <p class="card-text">$120.00</p>
-                  <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-              <img src="assets/prod/2...jpg" class="card-img-top" alt="" height="270px" width="100px">   <!-- Replace with your product image -->
-              <div class="card-body">
-                  <h5 class="card-title">Luxury Lipstick</h5>
-                  <p class="card-text">$25.00</p>
-                  <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-              <img src="assets/prod/3.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-              <div class="card-body">
-                  <h5 class="card-title">Silver Earrings</h5>
-                  <p class="card-text">$70.00</p>
-                  <a href="#" class="btn btn-primary">View Details</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card">
-            <img src="assets/prod/4.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-            <div class="card-body">
-                <h5 class="card-title">Elegant Necklace</h5>
-                <p class="card-text">$120.00</p>
-                <a href="assets/prod/4.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
-            </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card" data-bs-toggle="modal" data-bs-target="#productModal" data-title="Elegant Necklace" data-description="A beautiful and elegant necklace to enhance your style." data-price="$120.00" data-img="assets/prod/1.jpg">
+        <img src="assets/prod/1.jpg" class="card-img-top" alt="Elegant Necklace" height="270px" width="100px">
+        <div class="card-body">
+          <h5 class="card-title">Elegant Necklace</h5>
+          <p class="card-text">$120.00</p>
         </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+          <img src="assets/prod/2...jpg" class="card-img-top" alt="" height="270px" width="100px">   <!-- Replace with your product image -->
+          <div class="card-body">
+              <h5 class="card-title">Luxury Lipstick</h5>
+              <p class="card-text">$25.00</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+          <img src="assets/prod/3.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
+          <div class="card-body">
+              <h5 class="card-title">Silver Earrings</h5>
+              <p class="card-text">$70.00</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+          <img src="assets/prod/4.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
+          <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$120.00</p>
+              <a href="assets/prod/4.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
+          </div>
+      </div>
     </div>
     <div class="col-lg-4 col-md-6 mb-4">
       <div class="card">
@@ -175,24 +205,89 @@
               <a href="assets/prod/5.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
           </div>
       </div>
-  </div>
-  <div class="col-lg-4 col-md-6 mb-4">
-    <div class="card">
-        <img src="assets/prod/6.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
-        <div class="card-body">
-            <h5 class="card-title">Elegant Necklace</h5>
-            <p class="card-text">$120.00</p>
-            <a href="assets/prod/6.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
-        </div>
     </div>
-</div>
-<div class="btn-box">
-  <a href="products.html">
-    View All Products
-  </a>
-</div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+          <img src="assets/prod/6.jpg" class="card-img-top" alt="" height="270px" width="100px"> <!-- Replace with your product image -->
+          <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$120.00</p>
+              <a href="assets/prod/6.jpg" class="btn btn-primary" title="necklace" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>View Details</a>
+          </div>
+      </div>
+    </div>
+    <div class="btn-box">
+      <a href="products.html">
+        View All Products
+      </a>
+    </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Product Title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="productModalImg" class="modal-img mb-3" src="" alt="Product Image">
+        <p id="productDescription">Product description goes here.</p>
+        <p><strong>Price:</strong> <span id="productPrice"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Duplicated Modal -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel2">Product Title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="productModalImg2" class="modal-img mb-3" src="" alt="Product Image">
+        <p id="productDescription2">Product description goes here.</p>
+        <p><strong>Price:</strong> <span id="productPrice2"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="addToCartButton2">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // JavaScript to populate modal with product details
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function () {
+      const title = this.getAttribute('data-title');
+      const description = this.getAttribute('data-description');
+      const price = this.getAttribute('data-price');
+      const img = this.getAttribute('data-img');
+
+      document.getElementById('productModalLabel').textContent = title;
+      document.getElementById('productDescription').textContent = description;
+      document.getElementById('productPrice').textContent = price;
+      document.getElementById('productModalImg').src = img;
+
+      // Add event listener for the "Add to Cart" button
+      const addToCartButton = document.getElementById('addToCartButton');
+      addToCartButton.onclick = function () {
+        alert(`${title} has been added to your cart!`);
+      };
+    });
+  });
+</script>
     
     
 
