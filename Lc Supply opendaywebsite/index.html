@@ -222,74 +222,7 @@
       </a>
     </div>
   </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="productModalLabel">Product Title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <img id="productModalImg" class="modal-img mb-3" src="" alt="Product Image">
-        <p id="productDescription">Product description goes here.</p>
-        <p><strong>Price:</strong> <span id="productPrice"></span></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Duplicated Modal -->
-<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="productModalLabel2">Product Title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <img id="productModalImg2" class="modal-img mb-3" src="" alt="Product Image">
-        <p id="productDescription2">Product description goes here.</p>
-        <p><strong>Price:</strong> <span id="productPrice2"></span></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="addToCartButton2">Add to Cart</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  // JavaScript to populate modal with product details
-  document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', function () {
-      const title = this.getAttribute('data-title');
-      const description = this.getAttribute('data-description');
-      const price = this.getAttribute('data-price');
-      const img = this.getAttribute('data-img');
-
-      document.getElementById('productModalLabel').textContent = title;
-      document.getElementById('productDescription').textContent = description;
-      document.getElementById('productPrice').textContent = price;
-      document.getElementById('productModalImg').src = img;
-
-      // Add event listener for the "Add to Cart" button
-      const addToCartButton = document.getElementById('addToCartButton');
-      addToCartButton.onclick = function () {
-        alert(`${title} has been added to your cart!`);
-      };
-    });
-  });
-</script>
-    
-    
+</div> 
 
     <!-- contact section -->
 
