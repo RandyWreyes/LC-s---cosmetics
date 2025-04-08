@@ -477,9 +477,9 @@ h6 {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for glass effect */
     backdrop-filter: blur(10px); /* Adds the glass-like blur effect */
     padding: 5px 20px; /* Reduces height with smaller padding */
-    margin: 0; /* Adds some margin */
+    margin-right: 50px; /* Adds some margin */
     border-radius: 20px; /* Adds rounded corners */
-    width: 33%; /* Sets the width of the bar */
+    width: 28%; /* Sets the width of the bar */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
     position: absolute; /* Positions the bar absolutely */
     right: 0; /* Pushes the bar to the right side of the webpage */
