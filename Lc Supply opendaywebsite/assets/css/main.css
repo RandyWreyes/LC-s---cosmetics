@@ -1,3 +1,5 @@
+
+
 .shop_section .heading_container {
   margin-bottom: 20px;
 }
@@ -525,17 +527,19 @@ h6 {
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
-    font-size: 28px;
+    font-size: 32px;
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
+    
   }
 
   .navmenu {
     padding: 0;
     z-index: 9997;
     font-style: none;
+    background-color: #ae5dd400;
   }
 
   .navmenu ul {
@@ -549,7 +553,7 @@ h6 {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    background-color: #f1cbcb00;
+    background-color: #c2343400;
     backdrop-filter: blur(10px);
     transition: top 1s ease;
     display: none;
@@ -560,9 +564,17 @@ h6 {
 
   }
   .navmenu ul li {
-    margin-bottom: 10px; /* Add vertical spacing between links */
-    
-  
+    margin-bottom: 10px;
+    background-color: #f70c0c00;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #ff0000;
+    text-align: center;
+
+    /* Add vertical spacing between links */
   }
 
   
@@ -577,14 +589,15 @@ h6 {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
-    width: 30px;
+    width: 6px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), white 90%);
+    
+  
   }
 
   .navmenu a i:hover,
@@ -606,9 +619,9 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #ffffff;
+    color: #e44343;
     position: absolute;
-    font-size: 32px;
+    font-size: 36px;
     top: 15px;
     right: 15px;
     margin-right: 0;
@@ -619,42 +632,66 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(39, 46, 53, 0.8);
     transition: 0.3s;
+    
   }
 
   .mobile-nav-active .navmenu>ul {
-    display: block;
+    display:block;
   }
 
   /* Hover effect */
 .navmenu ul li:hover {
-  background-color: rgba(199, 226, 252, 0.8); /* Keeps the hover effect */
-  transform: scale(1.05); /* Slightly increase the size */
+  background-color: rgba(2, 2, 2, 0); /* Keeps the hover effect */
+  transform: scale(1.0); /* Slightly increase the size */
   transition: all 0.3s ease; /* Smooth transition */
 }
 
+
+
 /* Click effect (active state) */
 .navmenu ul li:active {
-  background-color: rgba(80, 120, 160, 0.9); /* Keeps the active state */
+  background-color: rgba(255, 255, 255, 0); /* Keeps the active state */
   transform: scale(1.1); /* Further enlarge when clicked */
   transition: all 0.2s ease; /* Smooth transition */
 }
 
 /* Add padding and styling for Facebook and Instagram icons */
 .navmenu .dropdown-menu li a i {
-  margin-right: 8px; /* Space between the icon and text */
-  padding: 10px; /* Add padding around the icon */
-  font-size: 18px; /* Adjust icon size */
+  display: inline-flex; /* Ensure proper alignment */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  font-size: 18px; /* Adjust icon size for better fit */
   color: var(--default-color); /* Match the site's default color */
-  background-color: rgba(255, 255, 255, 0.2); /* Optional background for the icon */
+  background-color: rgba(253, 253, 253, 0.945); /* Optional background for the icon */
   border-radius: 50%; /* Make the icon circular */
+  width: 40px; /* Set a fixed width for the icon */
+  height: 40px; /* Set a fixed height for the icon */
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0 auto; /* Center the icon horizontally */
+  margin-right: 10px; /* Add space between the icon and the text */
+}
+  .navmenu .dropdown-menu li a {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center icon and text vertically */
+  justify-content: center; /* Center the icon */
+  text-decoration: none; /* Remove underline from links */
+  color: var(--default-color); /* Match the site's default color */
+  padding: 10px; /* Adjust padding for better spacing */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+.navmenu .dropdown-menu li a span {
+  display: none; /* Hide the text, showing only the icons */
 }
 
 .navmenu .dropdown-menu li a:hover i {
   background-color: var(--accent-color); /* Highlight background on hover */
   color: var(--contrast-color); /* Change icon color on hover */
+  
+
+
 }
 
 }
@@ -698,10 +735,37 @@ h6 {
   .navmenu .dropdown-menu {
     position: static; /* Make dropdown menu flow with the layout */
     display: none; /* Hide dropdown by default */
+    background-color: var(--background-color); /* Matches the site's background */
+    box-shadow: none; /* Remove shadow for mobile */
+    padding: 0; /* Remove padding for mobile */
+    margin: 0; /* Remove margin for mobile */
+    width: 100%; /* Full width for mobile */  
+
+  
+  
+  
   }
 
-  .mobile-nav-active .navmenu .dropdown-menu {
-    display: block; /* Show dropdown when mobile nav is active */
+  .navmenu .dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+    background-color: rgba(0, 0, 255, 0);
+    width: 50%;
+    margin: 0 auto; /* Center the dropdown menu */
+    padding: 10px 0; /* Add padding to the dropdown menu */
+    border-radius: 8px; /* Rounded corners for the dropdown menu */ 
+    border-color: none;
+    
+  
+  
+  
+  }
+
+
+
+  .mobile-nav-active .dropdown-menu {
+    display: none; /* Show dropdown when mobile nav is active */
+  
+  
   }
 }
 
