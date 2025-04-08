@@ -10,8 +10,26 @@
 }
 
 .shop_section .box a {
-  color: #000000;
+  color: #000000;  .sitename {
+    font-family: "Poppins", sans-serif; /* Font for site name */
+    font-weight: 700; /* Bold font */
+    font-size: 32px; /* Font size */
+    color: var(--heading-color); /* Use the heading color */
+    text-transform: uppercase; /* Make the text uppercase */
+  }  
+  
+  
+  
 }
+
+.container {
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Add padding to the left and right */
+  font-size: larger;
+}
+
+
 
 .shop_section .box .img-box {
   display: -webkit-box;
@@ -322,10 +340,18 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-color);
 }
 
+.navmenu .bi{
+  font-size: 40px;
+  color: var(--default-color);
+  margin-right: 1px;
+  right: -100px;
+}
+
 /* Add to main.css later */
 .cart-sidebar {
   position: fixed;
   top: 0;
+  font-size: larger;
   right: -300px;
   width: 300px;
   height: 100vh;
@@ -337,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cart-sidebar.open {
   right: 0;
+
 }
 
 
@@ -436,12 +463,13 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 72px;
   margin-right: 8px;
+  border-radius: 50px;
 }
 
 .header .logo h1 {
-  font-size: 32px;
+  font-size: 42px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -500,10 +528,10 @@ h6 {
     padding: 5px 20px; /* Reduces height with smaller padding */
     margin-right: 40px; /* Adds some margin */
     border-radius: 20px; /* Adds rounded corners */
-    width: 37%; /* Sets the width of the bar */
+    width: 43%; /* Sets the width of the bar */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
     position: absolute; /* Positions the bar absolutely */
-    right: 0; /* Pushes the bar to the right side of the webpage */
+    right: 90px; /* Pushes the bar to the right side of the webpage */
   }
 
   .navmenu i{
@@ -555,6 +583,9 @@ h6 {
     transition: color 0.3s;
     
   }
+
+  
+
 
   .navmenu {
     padding: 0;
