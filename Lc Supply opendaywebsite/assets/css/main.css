@@ -21,18 +21,32 @@
 
 .shop_section .box a {
   color: #000000;
+<<<<<<< Updated upstream
 }
 
+=======
+}
+
+.sitename {
+  font-family: "Poppins", sans-serif; /* Font for site name */
+  font-weight: 700; /* Bold font */
+  font-size: 32px; /* Font size */
+  color: var(--heading-color); /* Use the heading color */
+  text-transform: uppercase; /* Make the text uppercase */
+}
+
+.container {
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Add padding to the left and right */
+  font-size: larger;
+}
+
+>>>>>>> Stashed changes
 .shop_section .box .img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 15px 30px;
   height: 245px;
 }
@@ -49,6 +63,7 @@
 }
 
 .shop_section .box .detail-box {
+<<<<<<< Updated upstream
   padding: 15px;
   text-align: center;
 }
@@ -58,6 +73,10 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
+=======
+  display: flex;
+  justify-content: space-between;
+>>>>>>> Stashed changes
 }
 
 .shop_section .box .detail-box h6 span {
@@ -87,6 +106,7 @@
   top: 10px;
   left: 10px;
   background-color: #ffffff;
+<<<<<<< Updated upstream
   color: #db4f66;
   border-radius: 50%;
   width: 50px;
@@ -97,15 +117,18 @@
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 15px;
+>>>>>>> Stashed changes
 }
 
 .shop_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
@@ -116,7 +139,6 @@
   color: #ffffff;
   border: 1px solid #f16179;
   border-radius: 5px;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -192,8 +214,7 @@
 }
 
 .contact_section .container-bg {
-  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 .contact_section .heading_container {
@@ -201,9 +222,7 @@
 }
 
 .contact_section .row {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
 }
 
 .contact_section form {
@@ -222,18 +241,6 @@
   color: #101010;
 }
 
-.contact_section input::-webkit-input-placeholder {
-  color: #131313;
-}
-
-.contact_section input:-ms-input-placeholder {
-  color: #131313;
-}
-
-.contact_section input::-ms-input-placeholder {
-  color: #131313;
-}
-
 .contact_section input::placeholder {
   color: #131313;
 }
@@ -249,7 +256,6 @@
   color: #ffffff;
   border: 1px solid #db4f66;
   border-radius: 0;
-  -webkit-transition: all .3s;
   transition: all .3s;
   display: block;
   color: #fff;
@@ -418,13 +424,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-color);
 }
 
-.navmenu .bi{
-  font-size: 40px;
-  color: var(--default-color);
-  margin-right: 1px;
-  right: -100px;
-}
-
 /* Add to main.css later */
 .cart-sidebar {
   position: fixed;
@@ -444,6 +443,77 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* Cart Sidebar Styling */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  font-size: larger;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-sidebar ul li span {
+  font-weight: bold;
+}
+
+.cart-sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+  position: relative;
+  font-size: 18px;
+  color: var(--default-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  color: #fff;
+}
 
 /* Fonts */
 :root {
@@ -645,6 +715,8 @@ h6 {
     border-radius: 50%; /* Makes the link circular on hover */
     transform: scale(1.1); /* Slightly enlarges the link on hover */
 }
+
+
 
 }
 
@@ -874,6 +946,9 @@ h6 {
   
   
   }
+
+  
+
 
   .navmenu .dropdown:hover .dropdown-menu {
     display: block; /* Show dropdown on hover */
