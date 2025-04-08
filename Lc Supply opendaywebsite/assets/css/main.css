@@ -2,15 +2,20 @@
   margin-bottom: 20px;
 }
 
+/* Product Grid Card Styling */
 .shop_section .box {
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  padding: 10px;
-  margin-top: 25px;
 }
 
-.shop_section .box a {
-  color: #000000;
+.shop_section .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .shop_section .box .img-box {
@@ -28,41 +33,60 @@
 }
 
 .shop_section .box .img-box img {
-  max-width: 100%;
-  max-height: 145px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .shop_section .box .detail-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+}
+
+.shop_section .box .detail-box h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .shop_section .box .detail-box h6 span {
   color: #db4f66;
 }
 
+.shop_section .box .btn {
+  background-color: #db4f66;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.shop_section .box .btn:hover {
+  background-color: #c43d58;
+  color: #fff;
+}
+
 .shop_section .box .new {
-  width: 50px;
-  height: 50px;
   position: absolute;
   top: 10px;
   left: 10px;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: #db4f66;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 100%;
-  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .shop_section .btn-box {
@@ -89,6 +113,68 @@
 .shop_section .btn-box a:hover {
   background-color: transparent;
   color: #f16179;
+}
+
+/* Product Grid Card Styling */
+.shop_section .card {
+  height: 100%; /* Ensure all cards have the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd; /* Optional: Add a border for consistency */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop_section .card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.shop_section .card img {
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure images are cropped proportionally */
+  width: 100%; /* Ensure images fill the card width */
+}
+
+.shop_section .card .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.shop_section .card .card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.shop_section .card .card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.shop_section .card .btn {
+  background-color: #db4f66;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop_section .card .btn:hover {
+  background-color: #c43d58;
+  color: #fff;
+}
+
+/* Add spacing between rows in the product grid */
+.shop_section .row {
+  row-gap: 20px; /* Adjust the value to control the spacing between rows */
+  margin-top: 20px; /* Add spacing above the product grid */
 }
 
 .contact_section {
@@ -231,9 +317,9 @@
 
 /* General Styling */
 body {
-  font-family: "Roboto", sans-serif; /* Default font for body text */
+  font-family: "Roboto", sans-serif;
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color); /* Apply the updated background color */
 }
 
 a {
@@ -349,12 +435,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffe5e7; /* Background color for the entire website, including individual sections */
-  --default-color: #b434aa; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ae5dd4; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ffffff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: ; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffe5e7; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffe5e7; /* Light pink background to match the website's style */
+  --default-color: #b434aa; /* Default text color */
+  --heading-color: #ae5dd4; /* Heading color */
+  --accent-color: #ffffff; /* Accent color for buttons and links */
+  --contrast-color: #ffe5e7; /* Contrast color for text */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -388,9 +473,9 @@ h1, h2, h3, h4, h5, h6 {
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  font-family: "Roboto", sans-serif; /* Default font for body text */
+  font-family: "Roboto", sans-serif;
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color); /* Apply the updated background color */
 }
 
 a {
@@ -869,8 +954,8 @@ h6 {
 --------------------------------------------------------------*/
 section,
 .section {
+  background-color: var(--background-color); /* Ensure sections match the background */
   color: var(--default-color);
-  background-color: var(--background-color);
   padding: 60px 0;
   scroll-margin-top: 80px;
   overflow: clip;
@@ -1058,6 +1143,10 @@ section,
 }
 
 /* Category Buttons Styling */
+.category-filters {
+  margin-bottom: 20px; /* Adjust the value to control the spacing */
+}
+
 .category-filters button {
   background-color: #db4f66; /* Primary button color */
   color: #ffffff; /* Text color */
