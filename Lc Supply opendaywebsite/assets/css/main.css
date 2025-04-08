@@ -21,10 +21,6 @@
 
 .shop_section .box a {
   color: #000000;
-<<<<<<< Updated upstream
-}
-
-=======
 }
 
 .sitename {
@@ -42,7 +38,6 @@
   font-size: larger;
 }
 
->>>>>>> Stashed changes
 .shop_section .box .img-box {
   display: flex;
   justify-content: center;
@@ -63,20 +58,8 @@
 }
 
 .shop_section .box .detail-box {
-<<<<<<< Updated upstream
-  padding: 15px;
-  text-align: center;
-}
-
-.shop_section .box .detail-box h6 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-=======
   display: flex;
   justify-content: space-between;
->>>>>>> Stashed changes
 }
 
 .shop_section .box .detail-box h6 span {
@@ -106,7 +89,6 @@
   top: 10px;
   left: 10px;
   background-color: #ffffff;
-<<<<<<< Updated upstream
   color: #db4f66;
   border-radius: 50%;
   width: 50px;
@@ -117,13 +99,6 @@
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  font-size: 15px;
->>>>>>> Stashed changes
 }
 
 .shop_section .btn-box {
