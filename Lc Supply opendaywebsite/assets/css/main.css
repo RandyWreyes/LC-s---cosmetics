@@ -1,5 +1,3 @@
-
-
 .shop_section .heading_container {
   margin-bottom: 20px;
 }
@@ -233,12 +231,13 @@
 
 /* General Styling */
 body {
+  font-family: "Roboto", sans-serif; /* Default font for body text */
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
 }
 
 a {
+  font-family: "Roboto", sans-serif; /* Font for links */
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
@@ -250,8 +249,9 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif; /* Font for headings */
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-weight: 700; /* Bold font for headings */
 }
 
 /* Navbar Styling */
@@ -277,9 +277,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navmenu ul li a {
-  text-decoration: none;
+  font-family: "Poppins", sans-serif; /* Font for navigation links */
+  font-weight: 600; /* Semi-bold for better readability */
   color: rgb(255, 163, 240);
-  font-weight: bold;
   padding: 10px 12px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -388,12 +388,13 @@ h1, h2, h3, h4, h5, h6 {
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
+  font-family: "Roboto", sans-serif; /* Default font for body text */
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
 }
 
 a {
+  font-family: "Roboto", sans-serif; /* Font for links */
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
@@ -410,8 +411,9 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Poppins", sans-serif; /* Font for headings */
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-weight: 700; /* Bold font for headings */
 }
 
 
@@ -522,6 +524,8 @@ h6 {
 }
 
 .navmenu ul li a {
+    font-family: "Poppins", sans-serif; /* Font for navigation links */
+    font-weight: 600; /* Semi-bold for better readability */
     text-decoration: none;
     color: rgb(255, 163, 240);
     font-weight: bold;
@@ -790,13 +794,17 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
+  font-family: "Roboto", sans-serif; /* Font for footer text */
+  font-size: 14px;
   color: var(--default-color);
   background-color: var(--background-color);
-  font-size: 14px;
   position: relative;
 }
 
-
+.footer .sitename {
+  font-family: "Poppins", sans-serif; /* Font for site name in footer */
+  font-weight: 700;
+}
 
 .footer .footer-about .logo span {
   font-size: 26px;
@@ -1049,11 +1057,33 @@ section,
   margin-bottom: 0;
 }
 
+/* Category Buttons Styling */
+.category-filters button {
+  background-color: #db4f66; /* Primary button color */
+  color: #ffffff; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  margin: 5px; /* Add spacing between buttons */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  font-weight: 600; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
 
+.category-filters button:hover {
+  background-color: #ffffff; /* Change background on hover */
+  color: #db4f66; /* Change text color on hover */
+  border: 2px solid #db4f66; /* Add border on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
 
-
-
-
+.category-filters button:active {
+  transform: scale(0.95); /* Slightly shrink button on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+}
 
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -1154,6 +1184,24 @@ section,
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+/* Button Font Settings */
+button, .btn {
+  font-family: "Poppins", sans-serif; /* Font for buttons */
+  font-weight: 500; /* Medium weight for buttons */
+  text-transform: uppercase; /* Make button text uppercase */
+}
+
+/* Modal Font Settings */
+.modal-title {
+  font-family: "Poppins", sans-serif; /* Font for modal titles */
+  font-weight: 700;
+}
+
+.modal-body {
+  font-family: "Roboto", sans-serif; /* Font for modal body text */
+  font-weight: 400;
 }
 
 
