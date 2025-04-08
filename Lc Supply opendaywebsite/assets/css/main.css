@@ -13,6 +13,12 @@
   position: relative;
 }
 
+.shop_section .box:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
 .shop_section .box a {
   color: #000000;
 }
@@ -35,6 +41,11 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.shop_section .box .img-box img:hover {
+  transform: scale(1.1); /* Slightly zoom in the image */
+  transition: transform 0.3s ease; /* Smooth transition for the image */
 }
 
 .shop_section .box .detail-box {
