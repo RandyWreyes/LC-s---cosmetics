@@ -38,6 +38,7 @@
   font-size: larger;
 }
 
+
 .shop_section .box .img-box {
   display: flex;
   justify-content: center;
@@ -58,6 +59,15 @@
 }
 
 .shop_section .box .detail-box {
+  padding: 15px;
+  text-align: center;
+}
+
+.shop_section .box .detail-box h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
   display: flex;
   justify-content: space-between;
 }
@@ -99,6 +109,11 @@
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 15px;
 }
 
 .shop_section .btn-box {
