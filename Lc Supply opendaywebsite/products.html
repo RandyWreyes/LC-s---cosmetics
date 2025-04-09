@@ -1,50 +1,51 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>LC's Supply</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-  
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-    <!-- Favicons -->
-    <link href="assets/logo/logo1.png" rel="icon">
-  
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/style.scss" rel="stylesheet">
-    
-    
-  
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>LC's Supply</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <body class="index-page">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Header -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-          <img src="assets/logo/logo1.png" alt="">
-          <h1 class="sitename">LC's Supply</h1>
-        </a>
+  <!-- Favicons -->
+  <link href="assets/logo/logo1.png" rel="icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.scss" rel="stylesheet">
   
-        <!-- Navbar -->
+  
+
+</head>
+
+<body class="index-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <img src="assets/logo/logo1.png" alt="">
+        <h1 class="sitename">LC's Supply</h1>
+      </a>
+
+      <!-- Navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="about.html">About</a></li>
+          
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">Other Pages</a>
             <ul class="dropdown-menu">
@@ -60,919 +61,924 @@
               </li>
             </ul>
           </li>
-      
+          
         </ul>
         <i class="mobile-nav-toggle bi bi-list"></i>
       </nav>
+
+    </div>
+    
+  </header>
+
   
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Home Section -->
+    <section id="Home" class="hero section dark-background">
+      <img src="assets/logo/bck1.jpg" alt="" data-aos="fade-in">
+      <div class="container">
+        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-6 col-lg-8">
+            <h2>LC's Nails & Cosmetics Supply</h2>
+            <p>Radiate Elegance, Shine Forever✨</p>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main">
 
-      <!-- Home Section -->
-      <section id="Home" class="hero section dark-background">
-        <img src="assets/logo/bck1.jpg" alt="" data-aos="fade-in">
-        <div class="container">
-          <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-xl-6 col-lg-8">
-              <h2>LC's Nails & Cosmetics Supply</h2>
-              <p>Radiate Elegance, Shine Forever✨</p>
+
+    <!-- Shop Section -->
+    <section class="shop_section layout_padding">
+      <div class="container">
+
+        <!-- Category Filters -->
+        <center>
+          <div class="category-filters">
+            <button onclick="filterProducts('all')">All</button>
+            <button onclick="filterProducts('nails')">Nails</button>
+            <button onclick="filterProducts('face-makeup')">Face Makeup</button>
+            <button onclick="filterProducts('eye-makeup')">Eye Makeup</button>
+            <button onclick="filterProducts('lips')">Lip Products</button>
+            <button onclick="filterProducts('beauty-accessories')">Beauty/Accessories</button>
+          </div>
+        </center>
+
+        <!-- Product Grid -->
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/1.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6><span>$10</span></h6>
+                  <a href="assets/prod/1.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Shop Section -->
-      <section class="shop_section layout_padding">
-        <div class="container">
-
-          <!-- Category Filters -->
-          <center>
-            <div class="category-filters">
-              <button onclick="filterProducts('all')">All</button>
-              <button onclick="filterProducts('nails')">Nails</button>
-              <button onclick="filterProducts('face-makeup')">Face Makeup</button>
-              <button onclick="filterProducts('eye-makeup')">Eye Makeup</button>
-              <button onclick="filterProducts('lips')">Lip Products</button>
-              <button onclick="filterProducts('beauty-accessories')">Beauty/Accessories</button>
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/2...jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6><span>$10</span></h6>
+                  <a href="assets/prod/2...jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
             </div>
-          </center>
-
-          <!-- Product Grid -->
-          <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/1.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6><span>$10</span></h6>
-                    <a href="assets/prod/1.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/2...jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6><span>$10</span></h6>
-                    <a href="assets/prod/2...jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/3.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/3.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/4.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/4.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/5.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/5.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/6.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/6.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/7.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/7.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/8.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/8.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/9.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/9.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/10.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/10.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/11.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/11.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/12.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/12.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/13.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/13.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/14.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/14.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/15.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/15.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/16.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/16.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/17.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/17.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/18.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/18.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/19.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/9.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/20.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/20.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="lips">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/21.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/21.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/22.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/22.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/23.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/23.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/24.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/24.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/25.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/25.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/26.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/26.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/27.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/27.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/28.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/8.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/29.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/29.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/30.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/30.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/31.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/31.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/32.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/32.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/33.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/33.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/34.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/34.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/35.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/35.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/36.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/36.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/37.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/37.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/38.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Flower Bouquet</h6>
-                    <h6> <span>$45</span></h6>
-                    <a href="assets/prod/8.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/39.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/9.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/40.jpg" alt="" height="300px" width="300px">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Nail Polish</h6>
-                    <h6> <span>$10</span></h6>
-                    <a href="assets/prod/40.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="lips">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/41.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/41.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/42.jpeg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/42.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/43.jpeg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/43.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/44.jpeg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/44.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/45.jpeg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/45.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/46.jpeg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/46.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/47.jpeg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/47.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
-              <div class="box">
-                <a href="">
-                  <div class="img-box">
-                    <img src="assets/prod/48.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <h6>Teddy Bear</h6>
-                    <h6> <span>$110</span></h6>
-                    <a href="assets/prod/48.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
-                      <i class="bi bi-zoom-in"></i>
-                    </a>
-                  </div>
-                  <div class="new"><span>New</span></div>
-                </a>
-              </div>
-            </div>
-            
           </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/3.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/3.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/4.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/4.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/5.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/5.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/6.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/6.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/7.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/7.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/8.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/8.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/9.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/9.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/10.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/10.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/11.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/11.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/12.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/12.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/13.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/13.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/14.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/14.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/15.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/15.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/16.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/16.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/17.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/17.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/18.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/18.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/19.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/9.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/20.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/20.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="lips">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/21.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/21.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/22.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/22.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/23.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/23.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/24.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/24.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/25.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/25.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/26.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/26.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/27.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/27.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/28.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/8.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/29.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/29.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="eye-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/30.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/30.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/31.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/31.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/32.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/32.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/33.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/33.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/34.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/34.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/35.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/35.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/36.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/36.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/37.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/37.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/38.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Flower Bouquet</h6>
+                  <h6> <span>$45</span></h6>
+                  <a href="assets/prod/8.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="beauty-accessories">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/39.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/9.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/40.jpg" alt="" height="300px" width="300px">
+                </div>
+                <div class="detail-box">
+                  <h6>Nail Polish</h6>
+                  <h6> <span>$10</span></h6>
+                  <a href="assets/prod/40.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="lips">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/41.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/41.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/42.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/42.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/43.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/43.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/44.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/44.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/45.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/45.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/46.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/46.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="nails">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/47.jpeg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/47.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3" data-category="face-makeup">
+            <div class="box">
+              <a href="">
+                <div class="img-box">
+                  <img src="assets/prod/48.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h6>Teddy Bear</h6>
+                  <h6> <span>$110</span></h6>
+                  <a href="assets/prod/48.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+                <div class="new"><span>New</span></div>
+              </a>
+            </div>
+          </div>
+          
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
-    <!-- Footer -->
+  <!-- Footer -->
   <footer id="footer" class="footer dark-background">
     <div class="copyright">
       <div class="container text-center">
@@ -981,29 +987,39 @@
     </div>
   </footer>
 
-    <!-- Scroll Top -->
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center" 
-      style="color: white; text-decoration: none; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: purple; border-radius: 50%; z-index: 1000;" 
-      onclick="this.style.display='none';">
-      <i class="bi bi-arrow-up-short" style="font-size: 24px; color: white;"></i>
-    </a>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+</body>
 
-  </body>
+</html>
 
-  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
