@@ -68,12 +68,13 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
-  display: flex;
-  justify-content: space-between;
+  text-align: center; /* Center the text */
 }
 
 .shop_section .box .detail-box h6 span {
   color: #db4f66;
+  display: block; /* Ensure the price is on a new line */
+  text-align: center; /* Center the price */
 }
 
 .shop_section .box .btn {
@@ -663,12 +664,12 @@ h6 {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for glass effect */
     backdrop-filter: blur(10px); /* Adds the glass-like blur effect */
     padding: 5px 20px; /* Reduces height with smaller padding */
-    margin-right: 40px; /* Adds some margin */
+    margin-right: 0px; /* Adds some margin */
     border-radius: 20px; /* Adds rounded corners */
-    width: 43%; /* Sets the width of the bar */
+    width: 37%; /* Sets the width of the bar */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
     position: absolute; /* Positions the bar absolutely */
-    right: 90px; /* Pushes the bar to the right side of the webpage */
+    right: 30px; /* Pushes the bar to the right side of the webpage */
   }
 
   .navmenu i{
