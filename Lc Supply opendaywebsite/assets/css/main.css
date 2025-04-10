@@ -1,6 +1,6 @@
-.shop_section .heading_container {
-  margin-bottom: 20px;
-}
+/*--------------------------------------------------------------
+# Global Variables
+--------------------------------------------------------------*/
 
 /* Product Grid Card Styling */
 .shop_section .box {
@@ -586,6 +586,15 @@ a:hover {
   text-decoration: none;
 }
 
+.cont .txt {
+  color: white;
+  background-color: #fdc1e2;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds shadow behind the text */
+  border-radius: 4px; /* Adds rounded corners to the text box */
+}
+
 h1,
 h2,
 h3,
@@ -783,11 +792,171 @@ h6 {
     border-radius: 0px;
     transition: all 0.3s ease;
     font-weight: 500;
-    color: #ff0000;
+    color: #ffffff;
     text-align: center;
 
     /* Add vertical spacing between links */
   }
+
+  @media (max-width: 1199px) {
+    .mobile-nav-toggle {
+      color: #ffffff;
+      font-size: 32px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+  
+    .navmenu {
+      padding: 0;
+      z-index: 9997;
+      font-style: none;
+      background-color: #ae5dd400;
+    }
+  
+    .navmenu ul {
+      font-size: 32px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.219); /* Dark background for mobile menu */
+      backdrop-filter: blur(10px);
+      transition: top 0.3s ease;
+      display: none;
+      list-style: none;
+      padding-top: 120px;
+    }
+  
+    .navmenu ul li {
+      margin-bottom: 10px;
+      background-color: transparent;
+      width: 100%;
+      padding: 10px 0;
+      border-radius: 0px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      color: #ffffff;
+      text-align: center;
+    
+      /* Add vertical spacing between links */
+    }
+  
+    
+  
+  
+  
+  
+    
+  
+    .navmenu a i,
+    .navmenu a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+      width: 6px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: 0.3s;
+      
+    
+    }
+  
+    .navmenu a i:hover,
+    .navmenu a:focus i:hover {
+      background-color: color-mix(in srgb, var(--accent-color), white 90%);
+    }
+  
+    
+  
+    .navmenu .active i,
+    .navmenu .active:focus i {
+      transform: rotate(180deg);
+    }
+  
+    
+  
+    .mobile-nav-active {
+      overflow: hidden;
+    }
+  
+    .mobile-nav-active .mobile-nav-toggle {
+      color: #e44343;
+      position: absolute;
+      font-size: 36px;
+      top: 15px;
+      right: 15px;
+      margin-right: 0;
+      z-index: 9999;
+    }
+  
+    .mobile-nav-active .navmenu {
+      position: fixed;
+      overflow: hidden;
+      inset: 0;
+      background: rgba(27, 28, 29, 0.8);
+      transition: 0.3s;
+      
+    }
+  
+    .mobile-nav-active .navmenu>ul {
+      display:block;
+    }
+  
+    /* Hover effect */
+    .navmenu ul li:hover {
+      background-color: rgba(0, 0, 0, 0); /* Add hover effect */
+      transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+  
+    .navmenu .dropdown-menu {
+      display: none; /* Hide dropdown by default */
+      position: static;
+      background-color: rgba(51, 46, 46, 0); /* Light background for dropdown */
+      box-shadow: none;
+      padding: 10px 0;
+      margin: 0;
+      width: 100%;
+      border-radius: 0px; /* No rounded corners for dropdown */
+      z-index: 9999; /* Ensure dropdown is above other elements */
+      transition: all 0.3s ease; /* Smooth transition for dropdown */
+    }
+  
+    .navmenu .dropdown.open .dropdown-menu {
+      display: block; /* Show dropdown when parent is clicked */
+    }
+  
+    .navmenu .dropdown-menu li {
+      padding: 10px 20px;
+    }
+  
+    .navmenu .dropdown-menu li a {
+      color: #5e5d5d; /* Dark text color */
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 34px; /* Font size for dropdown links */
+      font-weight: 500; /* Semi-bold for better readability */
+      padding: 10px 0; /* Padding for dropdown links */
+      border-radius: 5px; /* Rounded corners for dropdown links */
+      display: block; /* Make links block elements for better click area */
+    }
+  
+    .navmenu .dropdown-menu li a:hover {
+      color: #b434aa; /* Highlight link on hover */
+    }
+  
+    .mobile-nav-active .navmenu {
+      display: flex;
+    }
+  }
+  
 
   
 
