@@ -38,6 +38,17 @@
   font-size: larger;
 }
 
+.cont .txt {
+  font-size: 40px; /* Font size for the text */
+  color: #ffffff; /* Text color */
+  font-weight: 600; /* Font weight */
+  margin-bottom: 10px; /* Margin below the text */
+  background-color: #ffb4c1;
+  padding-top: 20px;
+  padding-bottom: 20px; /* Padding above and below the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the back of the letters */
+}
+
 
 .shop_section .box .img-box {
   display: flex;
