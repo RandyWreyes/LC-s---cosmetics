@@ -711,6 +711,7 @@ h6 {
     transition: all 0.3s ease; /* Smooth hover transition */
 }
 
+
 .navmenu ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Adds slight transparency on hover */
     color: #ffffff; /* Ensures text remains visible */
