@@ -688,7 +688,7 @@ h6 {
     align-items: center; /* Centers items vertically */
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for glass effect */
     backdrop-filter: blur(10px); /* Adds the glass-like blur effect */
-    padding: 5px 10px; /* Reduces height with smaller padding */
+    padding: 0px 5px; /* Reduces height with smaller padding */
     margin-right: 20px; /* Adds some margin */
     margin-bottom: 0px; /* Removes bottom margin */
     border-radius: 20px; /* Adds rounded corners */
