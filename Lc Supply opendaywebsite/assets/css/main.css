@@ -38,17 +38,6 @@
   font-size: larger;
 }
 
-.cont .txt {
-  font-size: 40px; /* Font size for the text */
-  color: #ffffff; /* Text color */
-  font-weight: 600; /* Font weight */
-  margin-bottom: 10px; /* Margin below the text */
-  background-color: #ffb4c1;
-  padding-top: 20px;
-  padding-bottom: 20px; /* Padding above and below the text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the back of the letters */
-}
-
 
 .shop_section .box .img-box {
   display: flex;
@@ -376,6 +365,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
+.navmenu .dropdown{
+  position: relative;
+}
+
 .navmenu ul li {
   margin: 0 10px;
 }
@@ -387,7 +380,19 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 12px;
   border-radius: 5px;
   transition: all 0.3s ease;
+
+
 }
+
+.btn{
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #fff;
+
+}
+
+
 
 .navmenu ul li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -674,13 +679,15 @@ h6 {
     align-items: center; /* Centers items vertically */
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for glass effect */
     backdrop-filter: blur(10px); /* Adds the glass-like blur effect */
-    padding: 5px 20px; /* Reduces height with smaller padding */
-    margin-right: 0px; /* Adds some margin */
+    padding: 5px 10px; /* Reduces height with smaller padding */
+    margin-right: 20px; /* Adds some margin */
+    margin-bottom: 0px; /* Removes bottom margin */
     border-radius: 20px; /* Adds rounded corners */
     width: 37%; /* Sets the width of the bar */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
     position: absolute; /* Positions the bar absolutely */
-    right: 30px; /* Pushes the bar to the right side of the webpage */
+    right: 33px; /* Pushes the bar to the right side of the webpage */
+    
   }
 
   .navmenu i{
@@ -694,6 +701,8 @@ h6 {
     padding: 0;
     list-style: none; /* Removes default list styles */
     display: flex; /* Aligns items horizontally */
+    justify-content: space-around; /* Distributes space evenly between items */
+    align-items: center; /* Centers items vertically */
 }
 
 .navmenu ul li {
@@ -710,7 +719,6 @@ h6 {
     border-radius: 5px; /* Slightly rounded corners for links */
     transition: all 0.3s ease; /* Smooth hover transition */
 }
-
 
 .navmenu ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Adds slight transparency on hover */
@@ -736,7 +744,7 @@ h6 {
     
   }
 
-
+  
 
 
   .navmenu {
